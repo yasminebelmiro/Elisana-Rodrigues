@@ -10,7 +10,7 @@ import {
   More,
 } from "./style";
 
-import { arrayProdutos } from "../../assets/database/arrayProdutos";
+import {arrayProdutos} from "../../assets/database/ArrayProdutos"
 
 const Catalogo = () => {
   return (
