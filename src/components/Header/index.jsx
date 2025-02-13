@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import {
   Button,
   ContainerHeader,
@@ -8,10 +8,12 @@ import {
   Right,
   Title,
 } from "./style";
-import { useNavigate } from "react-router-dom";
+
 
 const Header = () => {
   const [isOpen, setIsOpen] = React.useState(false);
+
+  const aboutSection = useRef(null)
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -28,9 +30,7 @@ const Header = () => {
         <div className="line"></div>
       </Hamburger>
       <Right className={isOpen ? "open" : ""}>
-        <Item>Sobre mim</Item>
-        <Item>Catálogo</Item>
-        <Item>Contatos</Item>
+
         <a href="https://www.b2cstore.com.br/?parceiro=42421">
           <Button>Compre na loja</Button>
         </a>

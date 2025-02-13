@@ -17,7 +17,7 @@ const index = () => {
           <FaInstagramSquare size={25} />
         </ContainerContact>
         <ContainerContact>
-          <Contact href="">64 9311-3211</Contact>
+          <Contact href="https://wa.me/c/556493113211">64 9311-3211</Contact>
           <FaWhatsappSquare size={25} />
         </ContainerContact>
       </Right>
